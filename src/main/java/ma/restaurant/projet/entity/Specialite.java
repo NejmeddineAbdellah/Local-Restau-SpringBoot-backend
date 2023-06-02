@@ -18,6 +18,7 @@ public class Specialite {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nom;
+	
 	@ManyToMany(mappedBy = "specialite")
 	@JsonIgnore
 	private List<Restau> restau;
@@ -45,5 +46,10 @@ public class Specialite {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
+	public Specialite() {
+		super();
+	}
+	
 
 }
