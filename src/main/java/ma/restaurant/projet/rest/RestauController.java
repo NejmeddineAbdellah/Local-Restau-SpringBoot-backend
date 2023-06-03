@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import ma.restaurant.projet.entity.Restau;
 import ma.restaurant.projet.service.RestauService;
 
 @RestController
 @RequestMapping("api/restaus")
+@CrossOrigin("*")
 public class RestauController {
 
 	@Autowired
