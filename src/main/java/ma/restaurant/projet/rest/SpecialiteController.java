@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ma.restaurant.projet.entity.Specialite;
 import ma.restaurant.projet.service.SpecialiteService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("api/specialite")
+@CrossOrigin("*")
 public class SpecialiteController {
 
 	@Autowired
