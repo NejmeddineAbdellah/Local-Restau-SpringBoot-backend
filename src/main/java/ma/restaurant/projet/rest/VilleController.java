@@ -18,6 +18,7 @@ import ma.restaurant.projet.service.VilleService;
 
 @RestController
 @RequestMapping("api/villes")
+@CrossOrigin("*")
 public class VilleController {
 
 	@Autowired
