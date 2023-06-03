@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import ma.restaurant.projet.entity.Ville;
 import ma.restaurant.projet.entity.Zone;
@@ -18,6 +19,7 @@ import ma.restaurant.projet.service.VilleService;
 import ma.restaurant.projet.service.ZoneService;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("api/zones")
 public class ZoneController {
 
